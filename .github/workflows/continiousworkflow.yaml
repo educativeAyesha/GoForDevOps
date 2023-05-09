@@ -26,6 +26,6 @@ jobs:
       - name: lint with golangci-lint
         uses: golangci/golangci-lint-action@v2
          with:
-          args: --timeout 5m0s
+          args: --timeout 10m0s
       - name: run go test
         run: go test ./...
